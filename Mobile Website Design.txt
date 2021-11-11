@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href=" https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        
+        header::before{
+            background: url(coffee-ge3cf63345_1280.png) no-repeat center center/cover;
+            content: "";
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            position: absolute;
+            height: 160%;
+            width: 100%;
+            z-index: -1;
+            
+        }
+        
+        html{
+            font-size: 62.5%;
+        }
+        
+      ul{
+          display: flex;
+      }
+
+      li{
+          list-style: none;
+          font-size: 1.7rem;
+          font-family: 'Rampart One', cursive;
+          padding: 1rem;
+          transition: all;
+          transition-duration: 0.5s;
+          
+          
+        }
+        
+        li:hover{
+            
+          cursor: pointer;
+          background-color: cyan;
+      }
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cornflowerblue;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    text-shadow: .3rem .5rem .9rem rgb(44, 40, 40);
+    color: #fff;
+}
+
+#insta{
+    width: 3%;
+    position: absolute;
+    right: 1rem;
+    top: .4rem;
+}
+
+#insta:hover{
+    box-shadow: .3rem .4rem 1.5rem orangered;
+    border-radius: 3rem;
+}
+
+#facebook{
+    width: 3%;
+    position: absolute;
+    right: 5rem;
+    top: .4rem;
+}
+
+#facebook:hover{
+    box-shadow: .3rem .4rem 1.5rem blue;
+    border-radius: .2rem;
+}
+
+/* #follow{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 1.5rem;
+    right: 6rem;
+    top: .4rem;
+    
+} */
+
+#phone{
+    width: 22%;
+    margin:4rem auto;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 3px 4px 8px rgb(224, 218, 218); */
+    box-shadow: .3rem .4rem .9rem rgb(86, 212, 250);
+    border-radius: 2rem;
+    transition: all;
+    transition-duration: 1s;
+}
+
+#phone:hover{
+    transform: rotate(360deg);
+}
+
+#android{
+    width: 20%;
+    position: absolute;
+    left: 10rem;
+    top: 14rem;
+    transform: rotate(-20deg);
+}
+
+#price{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#headphone{
+    width: 22%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: center;
+    transition: all;
+    transition-duration: 1s;
+    box-shadow: .3rem .4rem 1.5rem orangered;
+    border-radius: 2rem;
+}
+
+#headphone:hover{
+    transform: rotate(360deg);
+}
+
+#spotify{
+   width: 20%;
+   position: absolute;
+   right: 10rem;
+   top: 56rem;
+   transform: rotate(10deg);
+}
+
+@media only screen and (max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    html{
+        font-size: 45%;
+    }
+
+    #follow{
+        display: none;
+    }
+    
+}
+
+@media (min-width:1024px) and (max-width:1366px){
+    html{
+        font-size: 60%; 
+    }
+    
+    #follow{
+        display: none;
+    }
+}
+
+@media (min-width:375px) and (max-width:667px){
+    html{
+        font-style: 30%;
+    }
+
+    #spotify{
+        width: 24%;
+        position: absolute;
+        right: 4rem;
+        top:38rem;
+        transform: rotate(10deg);
+
+    }
+
+    #android{
+        width: 20%;
+        position: absolute;
+        left: 6rem;
+        top: 14rem;
+        transform: rotate(-20deg);
+    }
+    
+}
+
+@media (min-width:360px) and (max-width:640px){
+    html{
+        font-size: 30%;
+    }
+
+    #spotify{
+        width: 22%;
+        position: absolute;
+        right: 7rem;
+        top:46rem;
+        transform: rotate(10deg);
+
+    }
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Mobile</li>
+            <li>Headphone</li>
+            <li>Services</li>
+        </ul>
+        <a href="https://instagram.com"><img src="—Pngtree—instagram icon instagram logo_3584852.png" alt="Error" id="insta"></a>
+        <a href="https://facebook.com"><img src="5365678_fb_facebook_facebook logo_icon.png" alt="Error" id="facebook"></a>
+    </header>
+    <section>
+        <h1>Smartphones</h1>
+        <img src="—Pngtree—three mobile png mockup smartphone_5838333.png" alt="Error" id="phone">
+        <p id="price">&#8377;10,000.00</p>
+        <img src="1249969_android_network_smartphone_software_social media_icon.png" alt="Error" id="android">
+         <h1>Headphones</h1>
+         <img src="—Pngtree—abstract headphones with color splash_5348134.png" alt="Error" id="headphone">
+         <p id="price">&#8377;5,000.00</p>
+         <img src="7124272_spotify_logo_icon.png" alt="Error" id="spotify">
+    </section>
+</body>
+</html>
